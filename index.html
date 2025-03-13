@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Nerve Assignment</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="toggle-container">
+        <div class="toggle-btn active" data-view="Bullish">Bullish</div>
+        <div class="toggle-btn" data-view="Bearish">Bearish</div>
+        <div class="toggle-btn" data-view="RangeBound">Rangebound</div>
+        <div class="toggle-btn" data-view="Volatile">Volatile</div>
+      </div>
+      <div class="dropdown-container" id="dropdownContainer">
+        <div class="dropdown-selected" id="selectedDate">24-Apr-2024</div>
+        <div class="dropdown-list" id="dropdownList"></div>
+      </div>
+      <div class="cards-container" id="cardsContainer"></div>
+      <div class="empty-state" id="emptyState"></div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
