@@ -151,21 +151,25 @@ body {
   margin-top: 10px;
 }
 
+@media (max-width: 500px) {
+  .toggle-container {
+    flex-direction: column; /* Stack buttons */
+    align-items: stretch; /* Make them full width */
+    gap: 5px; /* Add some spacing */
+  }
+}
+
 /* Responsive Styles */
 @media (max-width: 480px) {
-  .toggle-container {
-    flex-wrap: wrap;
-  }
-
   .container {
     width: 95%;
     padding: 15px;
   }
 
-  .toggle-btn {
+  /* .toggle-btn {
     font-size: 12px;
     padding: 8px;
-  }
+  } */
 
   .dropdown-selected {
     font-size: 12px;
